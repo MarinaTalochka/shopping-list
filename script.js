@@ -14,8 +14,7 @@ const list = document.querySelector('#items');
 input.addEventListener('keydown', function(event) {
   if (event.key === 'Enter' && input.value !== '') {
     const newItem = document.createElement('div');
-    
-           newItem.textContent = input.value;
+               newItem.textContent = input.value;
            newItem.addEventListener('click', function(){
             newItem.classList.toggle('done')
            })
