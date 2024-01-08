@@ -16,10 +16,10 @@ input.addEventListener('keydown', function(event) {
     const newItem = document.createElement('div');
     
            newItem.textContent = input.value;
+           newItem.addEventListener('click', function(){
+            newItem.classList.toggle('done')
+           })
     list.appendChild(newItem);
     input.value = '';
   }
 })
-list.addEventListener('click',function() {
-    list.classList.toggle('done')
-  });
